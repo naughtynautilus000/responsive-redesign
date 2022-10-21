@@ -1,0 +1,214 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Redesign</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Responsive Redesign</h1>
+    <nav>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#wireframes">Wireframes</a></li>
+      <li><a href="#style-guide">Style Guide</a></li>
+      <li><a href="#prototypes">Prototypes</a></li>
+      <li><a href="#final-redesign">Final Redesign</a></li>
+    </nav>
+    <a href="https://naughtynautilus000.github.io/redesigned-site/">Link to Redesigned Website</a>
+  </header>
+  <main>
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <h3>Overview</h3>
+      <p>
+        In this project, I find and redesign a simple but poorly designed website. After finding the
+        site, I create wireframes, a style guide, and high-fidelity prototypes for my redesigned
+        site for 3 different screen sizes: mobile, tablet, and desktop. After creating the
+        prototypes, I will implement the redesigned website using HTML, CSS, and JavaScript such
+        that the site is responsive at all three screen sizes.
+      </p>
+      <h3>The Original Site: Antonio's Pizza Ordering Page</h3>
+      <p>
+        The page I chose was the custom ordering page on Antonio's Pizza's website. I choose this
+        page because I wanted to redesign a website that I have used before and I remembered how
+        much I disliked using this site and how some simple changes
+        Below is a screenshot of the original page:
+      </p>
+      <figure>
+        <img id="old-site" src="./images/before/antonios_before_1.png" alt="antonio's pizza original ordering page">
+        <caption>Antonio's Pizza Original Ordering Page</caption>
+      </figure>
+      <p>This ordering page has several problems:</p>
+      <ul id="problems">
+        <li>
+          <p>
+            <em>Unclear Hierarchy</em>: When looking at all of the menu items, there are headings
+            that separate the catagories of menu items, and then the actual menu items
+            themselves. The font for the categories is different than the menu items but
+            the font for the menu items is bolded and larger than the font for the headings.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Unclear Grouping of Menu Contents</em>: The name of each menu item has a grey
+            background. The corresponding description of the name is on a white
+            background. This creates a separation between the names and descriptions of
+            menu items which makes the menu harder to read.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Lack of Semantic HTML</em>: Most of the markup for this page consists of nested
+            &ltdiv&gt tags used for styling purposes. The actual text is contained in
+            heading tags in a proper hierarchical structure, but theses heading tags are
+            separated between multiple levels of nested &ltdiv&gt tags which can still make
+            parsing difficult.
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Poor Greyscale Contrast</em>: When looking at the page in greyscale. Selected menu
+            items appear very similar unselected items. For certain kinds of colorblindness, this
+            lack of contrast could make the page difficult to read.
+          </p>
+        </li>
+        <li>
+          <h4>WebAIM Wave Analysis</h4>
+          <p>
+            WebAIM Wave actually gives this site a good rating. The only areas of concern were
+            the use of device-dependent event handlers, redundant alternate text, and low contrast
+            errors.
+          </p>
+          <p>
+            The low contrast errors were surprising to me, as I feel that the site has very good
+            contrast outside of the greyscale point mentioned above. When looking at the site in
+            full color, everything on the page is easy to read.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section id="wireframes">
+      <h2>Wireframes</h2>
+      <p>
+        I made wireframes to design the general structure of content on the redesigned page.
+        Screenshots of the wireframes are included below.
+      </p>
+      <ul id="wireframes-list">
+        <li>
+          <figure>
+            <img id="desktop-wireframe" src="./images/wireframes/desktop_wireframe_anotated.jpg" alt="desktop wireframe">
+            <figcaption>Desktop Wireframe</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img id="tablet-wireframe" src="./images/wireframes/tablet_wireframe.png" alt="tablet wireframe">
+            <figcaption>Tablet Wireframe</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img id="mobile-wireframe" src="./images/wireframes/mobile_wireframe.png" alt="mobile wireframe">
+            <figcaption>Mobile Wireframe</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+    <section id="style-guide">
+      <h2>Style Guide</h2>
+      <p>
+        I developed a style guide from which to build the high-fidelity prototypes. A screenshot
+        of the style guide is included below:
+      </p>
+      <figure>
+        <img id="style-guide-img" src="./images/style-guide.png" alt="style guide">
+        <figcaption>Style Guide</figcaption>
+      </figure>
+    </section>
+    <section id="prototypes">
+      <h2>High-Fidelity Prototypes</h2>
+      <p>
+        Using the style guide, I created three high-fidelity prototypes for each of the desktop,
+        tablet, and mobile screen sizes. I have include screenshots of each of prototypes below.
+      </p>
+      <ul id="prototypes-list">
+        <li>
+          <figure>
+            <img src="./images/prototypes/dektop_prototype_annotated.png" alt="desktop prototype">
+            <figcaption>Desktop High-Fidelity Prototype</figcaption>
+          </figure>
+          <p></p>
+        </li>
+        <li>
+          <figure>
+            <img src="./images/prototypes/tablet_prototype_annotated.png" alt="tablet prototype">
+            <figcaption>Tablet High-Fidelity Prototype</figcaption>
+          </figure>
+          <p>
+            For this view (and the mobile view), the cart is hidden by default. To see the cart,
+            click on the cart icon on the top left corner of the page. To hide the cart again,
+            click somewhere else besides the cart icon or the cart itself
+          </p>
+        </li>
+        <li>
+          <figure>
+            <img src="./images/prototypes/mobile_prototype_annotated.png" alt="mobile prototype">
+            <figcaption>Mobile High-Fidelity Prototype</figcaption>
+          </figure>
+          <p>
+            For this view (and the tablet view), the cart is hidden by default. To see the cart,
+            click on the cart icon on the top left corner of the page. To hide the cart again,
+            click somewhere else besides the cart icon or the cart itself
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section id="final-redesign">
+      <h2>Final Redesign</h2>
+      <h3>Link to Site</h3>
+      <p>
+        You can find the redesigned webpage <a href="https://naughtynautilus000.github.io/redesigned-site/">here</a> (There is also a link in to
+        the page in the header).
+      </p>
+      <h3>Screenshots</h3>
+      <p>
+        Below are some screenshots of the final redesigned webpage at different screen sizes:
+      </p>
+      <ul id="screenshots">
+        <li>
+          <figure>
+            <img src="./images/site-screenshots/site-desktop.png" alt="desktop screenshot">
+            <caption>Desktop</caption>
+          </figure>
+        </li>
+        <li>
+          <div aria-label="tablet screenshots">
+            <figure>
+              <img src="./images/site-screenshots/site-tablet.png" alt="tablet screenshot">
+              <caption>Tablet</caption>
+            </figure>
+            <figure>
+              <img src="./images/site-screenshots/site-tablet-cart.png" alt="tablet with cart screenshot">
+              <caption>Tablet (With Cart)</caption>
+            </figure>
+          </div>
+        </li>
+        <li>
+          <div aria-label="mobile screenshots">
+            <figure>
+              <img src="./images/site-screenshots/site-mobile.png" alt="mobile screenshot">
+              <caption>Mobile</caption>
+            </figure>
+            <figure>
+              <img src="./images/site-screenshots/site-mobile-cart.png" alt="mobile with cart screenshot">
+              <caption>Mobile (With Cart)</caption>
+            </figure>
+          </div>
+        </li>  
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
